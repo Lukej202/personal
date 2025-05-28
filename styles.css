@@ -1,3 +1,8 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
     body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
@@ -34,6 +39,32 @@
             margin-left: auto;
             margin-right: auto;
             width: fit-content
+        }
+        .container{
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+        #map {
+            height: 400px;
+            width: 100%;
+            display: block;
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        #status {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 1.2em;
+            color: #2e7d32;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
         }
         img.logo {
             width: 500px;

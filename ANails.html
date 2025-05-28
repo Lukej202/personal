@@ -4,15 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="ANails and beyond Mobile Pet Care LLC - Your go-to for mobile pet care services.">
-    <meta name="keywords" content="ANails, mobile pet care, pet services">
-    <link rel=" stylesheet" href="styles.css">
-    <img class="logo" src="https://scontent-ord5-3.xx.fbcdn.net/v/t39.30808-6/490848655_122127690248628201_1219872306218655955_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=Bv3FHzT8Uh0Q7kNvwGtHGgp&_nc_oc=AdlzXqBApzBM6rsmaPG8m8Xm1geUG7oMOgXcIVDnvz2dtqOdEqbO3BMgKGaiFlmT4jg&_nc_zt=23&_nc_ht=scontent-ord5-3.xx&_nc_gid=GPVF2JPXIIfhGSA2Bavfgw&oh=00_AfLJw0wBwP7Phy0VwuCs9jm5iN90ryxKJV9guz19QKONIQ&oe=683C0DFF" alt="Anails logo">
     <title>A-NailsandBeyond</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel=" stylesheet" href="styles.css"/>
 </head>
 <body>
+    <img class="logo" src="https://scontent-ord5-3.xx.fbcdn.net/v/t39.30808-6/490848655_122127690248628201_1219872306218655955_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=Bv3FHzT8Uh0Q7kNvwGtHGgp&_nc_oc=AdlzXqBApzBM6rsmaPG8m8Xm1geUG7oMOgXcIVDnvz2dtqOdEqbO3BMgKGaiFlmT4jg&_nc_zt=23&_nc_ht=scontent-ord5-3.xx&_nc_gid=GPVF2JPXIIfhGSA2Bavfgw&oh=00_AfLJw0wBwP7Phy0VwuCs9jm5iN90ryxKJV9guz19QKONIQ&oe=683C0DFF" alt="Anails logo">
     <h1>A-Nails and Beyond Mobile Pet Care LLC</h1>
     <p>ANails is a simple HTML page that serves as a starting point for your web projects.</p>
     <p>Feel free to modify and expand it as needed.</p>
@@ -31,6 +29,11 @@
         </ul>
         <p>Our team is dedicated to providing the best care for your pets in the comfort of your home.</p>
     </div>
+    <div class="container">
+        <h2>Our Service Area</h2>
+        <div id="map"></div>
+        <p id="status">Click the map to check if you're in our service zone.</p>
+    </div>
     <div class="grey-box">
         <h2>Contact Us</h2>
         <p>For inquiries or schedule an appointment, please reach out to us via call or text at <a href="tel:+5133416164">+1 (513) 341-6164</a>.</p>
@@ -43,5 +46,7 @@
             <a href="https://www.instagram.com/anailsandbeyond/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
         </p>
     </footer>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 </body>
 </html>
