@@ -32,7 +32,12 @@
     <div class="container">
         <h2>Our Service Area</h2>
         <div id="map"></div>
-        <p id="status">Click the map to check if you're in our service zone.</p>
+        <div class="grey-box">
+            <h2>Check Your Address</h2>
+            <input type="text" id="addressInput" placeholder="Enter your address" style="width: 100%; padding: 10px; font-size: 1em;" />
+            <button onclick="checkAddress()" style="margin-top: 10px;">Check Address</button>
+            <p id="addressStatus"></p>
+        </div>
     </div>
     <div class="grey-box">
         <h2>Contact Us</h2>
